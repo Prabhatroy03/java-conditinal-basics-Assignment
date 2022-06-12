@@ -14,7 +14,10 @@ public class Circle_Area {
         System.out.println("Areaof the Circle: "+ans2);
     }
     static double area(double radius){
-        double crclarea = Math.PI*Math.pow(radius,2);
-        return crclarea;
+        if(radius > 0) {
+            double crclarea = Math.PI * Math.pow(radius, 2);
+            return crclarea;
+        }
+        return 0;
     }
 }
